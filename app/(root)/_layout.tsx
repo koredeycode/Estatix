@@ -8,11 +8,11 @@ export default function AppLayout() {
 
   if (loading) {
     return (
-      <SafeAreaView className="bg-white h-full flex justify-center items-center">
+      <SafeAreaView className="flex items-center justify-center h-full bg-white">
         <ActivityIndicator className="text-primary-300" size="large" />
       </SafeAreaView>
     );
   }
-  if (!isLoggedIn) return <Redirect href="/sign-in" />;
+  // if (!isLoggedIn) return <Redirect href="/sign-in" />;
   return <Slot />;
-}
+}n
